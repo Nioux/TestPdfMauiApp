@@ -1,0 +1,18 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestPdfMauiApp.MainPage"
+             xmlns:testapp="clr-namespace:TestPdfMauiApp"
+             BackgroundColor="{DynamicResource SecondaryColor}">
+
+    <GridLayout>
+        <!--<WebView x:Name="PdfView" />-->
+
+        <testapp:PdfView IsVisible="true" x:Name="PdfView" HeightRequest="300" WidthRequest="500" BackgroundColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+        <Button 
+            Text="Click me"
+            FontAttributes="Bold"
+            Clicked="OnButtonClicked"
+            HorizontalOptions="Center" />
+    </GridLayout>
+</ContentPage>
