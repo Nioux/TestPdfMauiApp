@@ -76,7 +76,7 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <Content Include="..\Libs\pdfjs\**\*.*">
+    <Content Include="..\..\Libs\pdfjs\**\*.*">
       <Link>Assets\pdfjs\%(RecursiveDir)%(Filename)%(Extension)</Link>
     </Content>
   </ItemGroup>
