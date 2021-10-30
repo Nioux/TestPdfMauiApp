@@ -51,12 +51,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\cerfa_13406-07.pdf" />
 	  <None Remove="Resources\feuille_de_personnage_editable.pdf" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Include="Resources\cerfa_13406-07.pdf" />
 	  <EmbeddedResource Include="Resources\feuille_de_personnage_editable.pdf" />
 	</ItemGroup>
 
