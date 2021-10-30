@@ -91,4 +91,10 @@ Et voilà !
 
 Evidemment, ne pas oublier de bien refermer tous les objets utilisés, que ce soient les streams ou le PdfStamper ou le PdfReader, ces 2 derniers n'étant pas des objets disposables dans cette version de la lib. Un oubli entrainerait des complications possibles pour faire ouvrir votre fichier fraichement créé dans une autre application !
 
+Pour l'afficher dans une application externe, rien de plus simple :
+
+```csharp
+Launcher.OpenAsync(new OpenFileRequest { File = new ReadOnlyFile(outputFilename) });
+```
+
 Je reviendrai dans un prochain article sur l'utilisation de cette lib iTextSharp pour créer un PDF à partir de rien, mais pas tout de suite, j'ai plusieurs autres sujets à suivre avant.
