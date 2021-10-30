@@ -97,4 +97,10 @@ Pour l'afficher dans une application externe, rien de plus simple :
 Launcher.OpenAsync(new OpenFileRequest { File = new ReadOnlyFile(outputFilename) });
 ```
 
+![Capture](screenshot.png)
+
+[feuille_de_personnage_editable.pdf](TestPdfMauiApp/Resources/feuille_de_personnage_editable.pdf)
+
+[feuille_de_personnage_modifiee.pdf](feuille_de_personnage_modifiee.pdf)
+
 Je reviendrai dans un prochain article sur l'utilisation de cette lib iTextSharp pour créer un PDF à partir de rien, mais pas tout de suite, j'ai plusieurs autres sujets à suivre avant.
