@@ -52,10 +52,12 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\cerfa_13406-07.pdf" />
+	  <None Remove="Resources\feuille_de_personnage_editable.pdf" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <EmbeddedResource Include="Resources\cerfa_13406-07.pdf" />
+	  <EmbeddedResource Include="Resources\feuille_de_personnage_editable.pdf" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -66,19 +68,5 @@
 		<OutputType>WinExe</OutputType>
 		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
 	</PropertyGroup>
-
-	<ItemGroup>
-	  <_MauiCompileToAdd Remove="Platforms\iOS\PdfViewRenderer.cs" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <None Include="Platforms\iOS\PdfViewRenderer.cs" />
-	</ItemGroup>
-
-  <ItemGroup>
-    <Content Include="..\..\Libs\pdfjs\**\*.*">
-      <Link>Assets\pdfjs\%(RecursiveDir)%(Filename)%(Extension)</Link>
-    </Content>
-  </ItemGroup>
   
 </Project>

@@ -15,11 +15,6 @@ namespace TestPdfMauiApp
 				{
 					fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				});
-			builder.ConfigureMauiHandlers(handlers =>
-			{
-				handlers.AddCompatibilityRenderer(typeof(PdfView), typeof(PdfViewRenderer));
-			});
-
 			return builder.Build();
 		}
 	}
