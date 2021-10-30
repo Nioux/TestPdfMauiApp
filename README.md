@@ -89,6 +89,8 @@ form.SetField("Cha MOD", "+1");
 
 Et voilà !
 
+![Capture](screenshot.png)
+
 Evidemment, ne pas oublier de bien refermer tous les objets utilisés, que ce soient les streams ou le PdfStamper ou le PdfReader, ces 2 derniers n'étant pas des objets disposables dans cette version de la lib. Un oubli entrainerait des complications possibles pour faire ouvrir votre fichier fraichement créé dans une autre application !
 
 Pour l'afficher dans une application externe, rien de plus simple :
@@ -96,8 +98,6 @@ Pour l'afficher dans une application externe, rien de plus simple :
 ```csharp
 Launcher.OpenAsync(new OpenFileRequest { File = new ReadOnlyFile(outputFilename) });
 ```
-
-![Capture](screenshot.png)
 
 [feuille_de_personnage_editable.pdf](TestPdfMauiApp/Resources/feuille_de_personnage_editable.pdf)
 
